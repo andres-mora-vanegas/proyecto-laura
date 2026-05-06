@@ -10,28 +10,27 @@ class Socialmedia extends MasterComponent {
             margin-bottom: 20px;
                         
             h2 {
-            color: rgb(106, 106, 250);
+              color: rgb(106, 106, 250);
             }
 
             ul {
-            list-style: none;
-            padding: 0;
+              list-style: none;
+              padding: 0;
             }
         `;
   }
 
   getTemplate() {
-    return `
-
-        <h2>Redes sociales</h2>
-         <ul>
-         <li>
-            <a href="https://www.linkedin.com/in/laura-milena-mora-blanco/">LinkedIn</a>
-            </li>
-            <li><a href="https://github.com/LauraMoraBlanco">GitHub</a></li>
-            </ul>
-        
-    `;
+    return `<h2>Redes sociales</h2>
+<ul>
+  <li>
+    <a href="https://www.linkedin.com/in/laura-milena-mora-blanco/">LinkedIn</a>
+  </li>
+  <li>
+    <a href="https://github.com/LauraMoraBlanco">GitHub</a>
+  </li>
+</ul>
+`;
   }
 }
 
