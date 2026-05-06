@@ -1,0 +1,30 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ebebeb;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  background-color: #fff;
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+h2 {
+  color: rgb(106, 106, 250);
+}
+
+#habilidades {
+  display: flex;
+}
