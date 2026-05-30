@@ -8,44 +8,68 @@
   </head>
 
   <body>
-    <section>
-      <my-menu></my-menu>
-    </section>
+    
+      <section>
+        <my-menu></my-menu>
+      </section>
 
-    <!-- PRESENTACIÓN -->
-    <section>
-      <my-presentation></my-presentation>
-    </section>
+      <section id="content">
+        <!-- PRESENTACIÓN -->
+        <section id="presentacion">
+          <my-presentation></my-presentation>
+        </section>
 
-    <!-- HABILIDADES -->
-    <section id="habilidades">
-      <my-skills titulo="Programación" habilidades="HTML,CSS,JavaScript,React">
-      </my-skills>
+        <!-- HABILIDADES -->
+        <section id="habilidades">
+          <my-skills
+            titulo="Programación"
+            habilidades="HTML,CSS,JavaScript,React"
+          >
+          </my-skills>
 
-      <my-skills
-        titulo="Diseño"
-        habilidades="Illustrator,Photoshop,Premiere Pro,Figma"
-      >
-      </my-skills>
+          <my-skills
+            titulo="Diseño"
+            habilidades="Illustrator,Photoshop,Premiere Pro,Figma"
+          >
+          </my-skills>
 
-      <my-skills
-        titulo="Otras habilidades"
-        habilidades="Word,Power Point,Excel,Google Suit"
-      >
-      </my-skills>
-    </section>
+          <my-skills
+            titulo="Otras habilidades"
+            habilidades="Word,Power Point,Excel,Google Suit"
+          >
+          </my-skills>
+        </section>
 
-    <!-- SOCIAL MEDIA -->
-    <section id="social-media">
-      <my-socialmedia></my-socialmedia>
-    </section>
+        <!-- PORTAFOLIO -->
+        <section id="portafolio">
+        <my-portafolio></my-portafolio>
+        
+          <!-- <my-portafolio
+            proyecto="Website: OpenSky Information"
+            descripción="Sitio web empresarial que ofrece servicios especializados en bibliotecología, educación virtual y tecnología."
+            boton="Ver proyecto"
+          >
+          </my-portafolio>
 
-    <!-- CONTACTO -->
-    <section id="contacto">
-      <my-form-component
-        nombre="laura"
-        email="lauramilenamorablanco@gmail.com"
-      ></my-form-component>
+          <my-portafolio
+            imagen="<img src="https://mir-s3-cdn-cf.behance.net/projects/original/356f02111703413.Y3JvcCwxMzgwLDEwODAsMjQ2LDA.png" alt="Website: OpenSky Information">"
+            proyecto="Website: OpenSky Information"
+            descripción="Sitio web empresarial que ofrece servicios especializados en bibliotecología, educación virtual y tecnología."
+            boton="Ver proyecto"
+          >
+          </my-portafolio> -->
+
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto">
+          <my-form-component
+            nombre="laura"
+            email="lauramilenamorablanco@gmail.com"
+          ></my-form-component>
+        </section>
+      </section>
+      
     </section>
 
     <!-- scripts-->
@@ -54,7 +78,7 @@
     <script src="js/form-component.js"></script>
     <script src="js/presentation-component.js"></script>
     <script src="js/skills.js"></script>
-    <script src="js/social-media.js"></script>
+    <script src="js/portafolio.js"></script>
     <script src="js/menu.js"></script>
   </body>
 </html>

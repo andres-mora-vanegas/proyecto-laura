@@ -8,7 +8,7 @@ class MasterComponent extends HTMLElement {
   getStyles() {
     return `
     *{
-        color:blue;
+      color:blue;
     }
     `;
   }

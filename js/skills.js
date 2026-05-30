@@ -1,15 +1,28 @@
 class Skills extends MasterComponent {
   getStyles() {
-    return `/* estilos para el componente */
-h2 {
-  color: rgb(106, 106, 250);
-}
+    return `
+      
+      section {
+        background-color: #edd6a1;
+        margin: 20px 20px;
+        padding: 20px;
+        width: 250px;
+        border-radius: 10px;
+        
+        
+      }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
-`;
+      h2 {
+        color: #572364;
+        text-align: center;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        color: #572364;
+    }
+    `;
   }
 
   getTemplate() {
@@ -21,11 +34,14 @@ ul {
       })
       .join("");
 
-    return `<h2>${this.getAttribute("titulo")}</h2>
-<ul>
-  ${habilidades}
-</ul>
-`;
+    return `
+      <section>
+        <h2>${this.getAttribute("titulo")}</h2>
+        <ul>
+          ${habilidades}
+        </ul>
+      </section>
+    `;
   }
 }
 
