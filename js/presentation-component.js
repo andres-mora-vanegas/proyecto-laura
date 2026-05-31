@@ -23,6 +23,7 @@ class Presentation extends MasterComponent {
 
       h1 {
         color: #edd6a1;
+        font-weight: 400;
       }
 
       h2 {

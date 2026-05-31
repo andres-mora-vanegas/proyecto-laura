@@ -3,48 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="https://use.typekit.net/ody4oua.css" />
     <link rel="stylesheet" href="css/app.css" />
   </head>
 
   <body>
-    
-      <section>
-        <my-menu></my-menu>
+    <section>
+      <my-menu></my-menu>
+    </section>
+
+    <section id="content">
+      <!-- PRESENTACIÓN -->
+      <section id="presentacion">
+        <my-presentation></my-presentation>
       </section>
 
-      <section id="content">
-        <!-- PRESENTACIÓN -->
-        <section id="presentacion">
-          <my-presentation></my-presentation>
-        </section>
+      <!-- HABILIDADES -->
+      <section id="habilidades">
+        <my-skills
+          image="img/home/sobre mi.png"
+          titulo="Programación"
+          habilidades="Conoce mis habilidades y trayectoria formativa y laboral"
+        >
+        </my-skills>
 
-        <!-- HABILIDADES -->
-        <section id="habilidades">
-          <my-skills
-            titulo="Programación"
-            habilidades="HTML,CSS,JavaScript,React"
-          >
-          </my-skills>
+        <my-skills
+          image="img/home/portafolio.png"
+          titulo="Diseño"
+          habilidades="Illustrator,Photoshop,Premiere Pro,Figma"
+        >
+        </my-skills>
 
-          <my-skills
-            titulo="Diseño"
-            habilidades="Illustrator,Photoshop,Premiere Pro,Figma"
-          >
-          </my-skills>
+        <my-skills
+          image="img/home/contacto.png"
+          titulo="Otras habilidades"
+          habilidades="Word,Power Point,Excel,Google Suit"
+        >
+        </my-skills>
+      </section>
 
-          <my-skills
-            titulo="Otras habilidades"
-            habilidades="Word,Power Point,Excel,Google Suit"
-          >
-          </my-skills>
-        </section>
-
-        <!-- PORTAFOLIO -->
-        <section id="portafolio">
+      <!-- PORTAFOLIO -->
+      <section id="portafolio">
         <my-portafolio></my-portafolio>
-        
-          <!-- <my-portafolio
+
+        <!-- <my-portafolio
             proyecto="Website: OpenSky Information"
             descripción="Sitio web empresarial que ofrece servicios especializados en bibliotecología, educación virtual y tecnología."
             boton="Ver proyecto"
@@ -58,18 +61,15 @@
             boton="Ver proyecto"
           >
           </my-portafolio> -->
-
-        </section>
-
-        <!-- CONTACTO -->
-        <section id="contacto">
-          <my-form-component
-            nombre="laura"
-            email="lauramilenamorablanco@gmail.com"
-          ></my-form-component>
-        </section>
       </section>
-      
+
+      <!-- CONTACTO -->
+      <section id="contacto">
+        <my-form-component
+          nombre="laura"
+          email="lauramilenamorablanco@gmail.com"
+        ></my-form-component>
+      </section>
     </section>
 
     <!-- scripts-->

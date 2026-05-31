@@ -15,6 +15,7 @@ class Skills extends MasterComponent {
       h2 {
         color: #572364;
         text-align: center;
+        font-size: 20px;
       }
 
       ul {
@@ -22,6 +23,16 @@ class Skills extends MasterComponent {
         padding: 0;
         color: #572364;
     }
+        .container{
+          display: flex;
+        }
+          .left{
+            width:30%;
+            align-content: center;
+          }
+          .right{
+            width:70%;
+          }
     `;
   }
 
@@ -36,10 +47,18 @@ class Skills extends MasterComponent {
 
     return `
       <section>
-        <h2>${this.getAttribute("titulo")}</h2>
-        <ul>
-          ${habilidades}
-        </ul>
+        <div class="container">
+          <div class="left">
+            <img src="${this.getAttribute("image")}" alt="Imagen de habilidades" width="100%">
+          </div>
+          <div class="right">
+            <h2>${this.getAttribute("titulo")}</h2>
+            <ul>
+              ${habilidades}
+            </ul>
+          </div>
+        </div>
+        
       </section>
     `;
   }

@@ -4,9 +4,18 @@ class Portafolio extends MasterComponent {
       section {
         margin: 20px;
         border-radius: 10px;
-        display: block;
+        display: flex;
         margin: 20px 20px;
+        flex-flow: wrap;
       }
+
+      article{
+        width: 50%;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: left;
+      }
+      
 
       section#primeros-proyectos {
         display: flex;
@@ -55,31 +64,75 @@ class Portafolio extends MasterComponent {
       a {
         color: #c9e265;
       }
+
+      img{
+        width: 100%;
+      }
     `;
   }
 
   getTemplate() {
-    // let proyecto = this.getAttribute("portafolio");
-    // portafolio = portafolio
-    //   .split(",");
-    //   .map((proyecto) => {
-    //     return "<p>" + proyecto + "</p>";
-    //   })
-    //   .join("");
+    const items = [
+      {
+        imagen:
+          "https://mir-s3-cdn-cf.behance.net/projects/original/356f02111703413.Y3JvcCwxMzgwLDEwODAsMjQ2LDA.png",
+        proyecto: "Website: OpenSky Information",
+        descripcion:
+          "Sitio web empresarial que ofrece servicios especializados en bibliotecología, educación virtual y tecnología.",
+        enlace:
+          "https://www.behance.net/gallery/111703413/Website-OpenSky-Information-UIUX-Version-1",
+      },
+      {
+        imagen:
+          "https://mir-s3-cdn-cf.behance.net/projects/original/356f02111703413.Y3JvcCwxMzgwLDEwODAsMjQ2LDA.png",
+        proyecto: "Website: OpenSky Information",
+        descripcion:
+          "Sitio web empresarial que ofrece servicios especializados en bibliotecología, educación virtual y tecnología.",
+        enlace:
+          "https://www.behance.net/gallery/111703413/Website-OpenSky-Information-UIUX-Version-1",
+      },
+      {
+        imagen:
+          "https://mir-s3-cdn-cf.behance.net/projects/original/356f02111703413.Y3JvcCwxMzgwLDEwODAsMjQ2LDA.png",
+        proyecto: "Website: OpenSky Information",
+        descripcion:
+          "Sitio web empresarial que ofrece servicios especializados en bibliotecología, educación virtual y tecnología.",
+        enlace:
+          "https://www.behance.net/gallery/111703413/Website-OpenSky-Information-UIUX-Version-1",
+      },
+      {
+        imagen:
+          "https://mir-s3-cdn-cf.behance.net/projects/original/356f02111703413.Y3JvcCwxMzgwLDEwODAsMjQ2LDA.png",
+        proyecto: "Website: OpenSky Information",
+        descripcion:
+          "Sitio web empresarial que ofrece servicios especializados en bibliotecología, educación virtual y tecnología.",
+        enlace:
+          "https://www.behance.net/gallery/111703413/Website-OpenSky-Information-UIUX-Version-1",
+      },
+    ];
 
-    //   return `
-    //   <section>
-    //     <img>${this.getAttribute("imagen")}</img>
-    //     <h3>${this.getAttribute("proyecto")}</h3>
-    //     <p>${this.getAttribute("descripcion")}</p>
-    //     <a href="${this.getAttribute("enlace")}">Ver más</a>
-    //   </section>
-    // `;
+    const content = items
+      .map(
+        (item) => `
+        <article>
+          <img src="https://mir-s3-cdn-cf.behance.net/projects/original/356f02111703413.Y3JvcCwxMzgwLDEwODAsMjQ2LDA.png" alt="Website: OpenSky Information">
+          <h3>Website: OpenSky Information</h3>
+          <p>Sitio web empresarial que ofrece servicios especializados en bibliotecología, educación virtual y tecnología.</p>
+          <a href="https://www.behance.net/gallery/111703413/Website-OpenSky-Information-UIUX-Version-1">Ver más</a>
+        </article>
+      `,
+      )
+      .join("");
 
     return `
       <h2>Portafolio</h2>  
-        <section>
-          <section id="primeros-proyectos">
+        <section>     
+          ${content}          
+        </section>      
+    `;
+    /*
+
+    <section id="primeros-proyectos">
             <section id="proyecto1">
               <img src="https://mir-s3-cdn-cf.behance.net/projects/original/356f02111703413.Y3JvcCwxMzgwLDEwODAsMjQ2LDA.png" alt="Website: OpenSky Information">
               <h3>Website: OpenSky Information</h3>
@@ -108,8 +161,7 @@ class Portafolio extends MasterComponent {
             </section>
           </section>
         </section>
-      </section>
-    `;
+    */
   }
 }
 
